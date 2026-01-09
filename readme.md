@@ -107,6 +107,7 @@ mypy .
 Interactive Docs: http://localhost:8001/docs
 
 🤖 AI Agents Architecture
+
 User Request → OrchestratorAgent
                 ↓
     ┌─────────┼─────────┐
@@ -220,3 +221,4 @@ FitFlow - AI Fitness Coach API
 2. Add Groq API key                 (1 min)  
 3. python main.py                  (30 sec)
 4. http://localhost:8001/docs      (READY!)
+
