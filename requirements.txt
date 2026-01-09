@@ -1,0 +1,61 @@
+# Core FastAPI
+fastapi==0.115.0
+uvicorn[standard]==0.30.6
+
+# Database
+sqlalchemy==2.0.35
+alembic==1.13.2
+psycopg2-binary==2.9.9
+aiosqlite==0.20.0
+
+# LLM Clients (Groq + fallbacks)
+openai==1.51.0
+anthropic==0.31.0
+google-generativeai==0.8.3
+groq==0.33.0
+
+# HTTP & Async (REMOVED VERSION PIN - let pip resolve)
+httpx
+aiohttp==3.10.5
+
+# Pydantic & Validation
+pydantic==2.9.2
+pydantic-settings==2.5.2
+
+# Environment & Config
+python-dotenv==1.0.1
+python-multipart==0.0.9
+
+# Security & Auth
+passlib[bcrypt]==1.7.4
+python-jose[cryptography]==3.3.0
+
+# Date & Time
+python-dateutil==2.9.0.post0
+pendulum==3.0.0
+
+# Data Processing
+pandas==2.2.3
+numpy==2.1.1
+
+# Logging & Utils
+structlog==24.4.0
+python-json-logger==2.0.7
+
+# ========================================
+# TESTING (CONFLICT-FIXED)
+# ========================================
+pytest==8.3.3
+pytest-mock==3.14.1
+pytest-cov==5.0.0
+pytest-asyncio==0.24.0
+# REMOVED pytest-httpx - causes httpx version conflict
+
+# ========================================
+# DEVELOPMENT (Optional)
+# ========================================
+black==24.8.0
+isort==5.13.2
+mypy==1.11.2
+pre-commit==3.8.0
+rope==1.9.0
